@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="BankBot Suite">
+
+    <!-- Listener -->
+    <listeners>
+
+        <listener class-name="com.bankbot.listeners.TestListener"/>
+
+    </listeners>
+
+    <!-- Test Execution -->
+    <test name="Banking Automation Tests">
+
+        <classes>
+
+            <!-- Login Test -->
+            <class name="com.bankbot.tests.LoginTest"/>
+
+            <!-- Customer Test -->
+            <class name="com.bankbot.tests.CustomerTest"/>
+
+            <!-- Account Test -->
+            <class name="com.bankbot.tests.AccountTest"/>
+
+            <!-- Fund Transfer Test -->
+            <class name="com.bankbot.tests.FundTransferTest"/>
+
+            <!-- Validation Test -->
+            <class name="com.bankbot.tests.ValidationTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
